@@ -1,0 +1,64 @@
+#box {
+  width: 75px;
+  height: 75px;
+  background: rgb(46, 218, 123);
+}
+
+#rectangle  {
+  width: 50px;
+  height: 65px;
+  background: rgb(218, 178, 46);
+}
+
+button {
+    color: #a52a2a; /* Цвет заголовка */
+    font-size: 24pt; /* Размер шрифта в пунктах */
+    font-family: Georgia, Times, serif; /* Семейство шрифтов */
+    font-weight: normal; /* Нормальное начертание текста  */
+  }
+
+
+  #circle {
+    width: 50px;
+    height: 50px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    background: rgb(67, 141, 211);
+  }
+
+
+  .heart {
+    position: relative;
+    width: 50px;
+    height: 90px;
+    background-color: red;
+    box-shadow: -1px 0px 2px #444;  
+    -webkit-border-radius: 50px 50px 0 0;
+    -moz-border-radius: 50px 50px 0 0;
+    border-radius: 50px 50px 0 0;
+  /* Определяем угол наклона */
+    -webkit-transform: rotate(315deg);
+    -moz-transform: rotate(315deg);
+    -ms-transform: rotate(315deg);
+    -o-transform: rotate(315deg);
+    transform: rotate(315deg);
+  }
+  /* Формируем правую часть */
+  .heart:before {
+    position: absolute;
+    width: 90px;
+    height: 50px;
+    left: 0;
+    bottom: 0;
+    content: "";
+    background-color: red;
+    box-shadow: 0px 3px 3px #444444; 
+    -webkit-border-radius: 50px 50px 0 0;
+    -moz-border-radius: 50px 50px 0 0;
+    border-radius: 0 50px 50px 0;
+  }
+  /* Убираем тень при наведении */
+  .heart:hover:before, .heart:hover{
+      box-shadow:none;
+  }
