@@ -1,0 +1,15 @@
+button {
+    color: #a52a2a; /* Цвет заголовка */
+    font-size: 24pt; /* Размер шрифта в пунктах */
+    font-family: Georgia, Times, serif; /* Семейство шрифтов */
+    font-weight: normal; /* Нормальное начертание текста  */
+  }
+
+  circle {
+    width: 150px;
+    height: 150px;
+    -webkit-border-radius: 75px;
+    -moz-border-radius: 25px;
+    border-radius: 55px;
+    background: rgb(197, 201, 206);
+  }
